@@ -20,7 +20,7 @@ body{
 }
 .container{
     padding: 10px 10%;
-    align-items: right;
+    
 }
 nav{
     display: flex;
