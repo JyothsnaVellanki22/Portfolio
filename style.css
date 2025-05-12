@@ -53,7 +53,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 15%;
+    margin-top: 30%;
     font-size: 30px;
     text-align: left;
 }
