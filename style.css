@@ -13,11 +13,16 @@ body{
 }
 #header{
     width: 100%;
-    height: 100vh;
-    background-image: url(Images/back.jpg);
+    min-height: 100svh; /* better on mobile than 100vh */
+
+    /* black gradient + image */
+    background-image:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.25)),
+      url("Images/back.jpg");
+
     background-size: cover;
     background-position: center;
-    
+    background-repeat: no-repeat;
 }
 .container{
     padding: 10px 10%;
@@ -54,22 +59,19 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 25%;
+    margin-top: 18%;
     font-size: 60px;
     text-align: left;
 }
 .header-text h1{
-    font-size: 60px;
-    font-weight: 600;
-    margin-top: 60px;
+    font-size: 62px;
+    font-weight: 700;
+    margin-top: 18px;
     text-align: left;
+    line-height: 1.1;
 }
 .header-text h1 span{
     color: #f5a6a6;
-}
-#header, #about, #services, #portfolio, #contact{
-  position: relative;
-  isolation: isolate;
 }
 /* ---------ABOUT--------- */
 #about{
@@ -311,25 +313,30 @@ nav .fas{
     display: none;
 }
 @media only screen and (max-width: 600px){
-    
     .container{
         padding: 10px 6%;
     }
-    
+
     #header{
-        background-image: url(Images/background.png);
+        min-height: 100svh;
+        background-image:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.25)),
+        url("Images/back.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 100svh;
     }
     .header-text{
-        margin-top: 40%;
-        font-size: 20px;
+        margin-top: 45%;
         text-align: center;
     }
+    
+    .header-text p{
+        font-size: 20px;
+    }
+    
     .header-text h1{
-        font-size: 42px;
+        font-size: 44px;
         line-height: 1.15;
         margin-top: 12px;
     }
