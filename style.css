@@ -70,12 +70,6 @@ nav ul li a:hover::after{
   position: relative;
   isolation: isolate;
 }
-#header::before, #about::before, #services::before, #portfolio::before, #contact::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
 /* ---------ABOUT--------- */
 #about{
     width: 100%;
