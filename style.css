@@ -33,7 +33,6 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    margin-top: 15%;
 }
 nav ul li a{
     color: #fff;
@@ -59,7 +58,7 @@ nav ul li a:hover::after{
     font-size: 30px;
     text-align: left;
 }
-header-text h1{
+.header-text h1{
     font-size: 30px;
     margin-top: 60px;
     text-align: left;
@@ -306,16 +305,25 @@ form .btn2{
 nav .fas{
     display: none;
 }
-@media only screen and (max-with: 600px){
+@media only screen and (max-width: 600px){
+    
+    .container{
+        padding: 10px 6%;
+    }
+    
     #header{
         background-image: url(Images/background.png);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 60%;
         font-size: 16px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 28px;
+    }
+    /* Prevent About section from cutting off text on mobile */
+    #about{
+        height: auto;
     }
     nav .fas{
         display: block;
