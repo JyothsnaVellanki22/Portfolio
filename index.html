@@ -3,24 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Jyothsna Vellanki | Software Engineer | AI/ML | Full Stack</title>
 
-    <meta name="description"
-        content="Jyothsna Vellanki is a Software Engineer specializing in AI engineering, full-stack development, cloud-native applications, RAG systems, and AI application security.">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <meta name="keywords"
-        content="Jyothsna Vellanki, Software Engineer, AI Engineer, AI/ML, Full Stack, Python, React, Angular, FastAPI, Flask, Java, Spring Boot, RAG, LLM, LangChain, LangGraph, Azure, PostgreSQL, AI Security">
-
-    <meta name="author" content="Jyothsna Vellanki">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script
+        src="https://kit.fontawesome.com/8e0bcb0c0c.js"
+        crossorigin="anonymous">
+    </script>
 
-    <!-- Main CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,24 +30,20 @@
 <body>
 
 
-<!-- =========================================================
-     HEADER / HERO
-========================================================= -->
+<!-- ======================================================
+     HOME / HERO
+====================================================== -->
 
 <div id="header">
 
     <div class="container">
 
         <!-- Navigation -->
+
         <nav>
 
-            <div class="logo-area">
-                <!-- Optional logo -->
-                <!--
-                <img src="Images/Logo.png"
-                     class="Logo"
-                     alt="Jyothsna Vellanki">
-                -->
+            <div class="nav-brand">
+                Jyothsna Vellanki
             </div>
 
             <ul id="sidemenu">
@@ -70,51 +68,57 @@
                     <a href="#contact">Contact</a>
                 </li>
 
-                <!-- Mobile close button -->
-                <i class="fas fa-times"
-                   onclick="closemenu()">
+                <i
+                    class="fas fa-times"
+                    onclick="closemenu()">
                 </i>
 
             </ul>
 
-            <!-- Mobile menu button -->
-            <i class="fas fa-bars"
-               onclick="openmenu()">
+            <i
+                class="fas fa-bars"
+                onclick="openmenu()">
             </i>
 
         </nav>
 
 
-        <!-- Hero Content -->
+        <!-- Hero -->
+
         <div class="header-text">
 
-            <h3>
+            <p class="hero-role">
                 Software Engineer
-            </h3>
-
-            <h1>
-                Hi, I'm <span>Jyothsna.</span>
-            </h1>
-
-            <p>
-                I build AI-powered, full-stack applications.
             </p>
 
-            <p>
-                AI Engineering · Full Stack · Cloud · Application Security
+            <h1>
+                Hi, I'm
+                <span>Jyothsna.</span>
+            </h1>
+
+            <p class="hero-specialization">
+                AI/ML • Full Stack • Cloud • AI Security
+            </p>
+
+            <p class="hero-description">
+                I build AI-powered applications, enterprise software,
+                RAG systems, agentic workflows, and secure cloud-native
+                solutions designed for real-world use.
             </p>
 
 
             <div class="hero-actions">
 
-                <a href="#portfolio"
-                   class="btn">
+                <a
+                    href="#portfolio"
+                    class="btn">
                     View Projects
                 </a>
 
-                <a href="Images/JS.pdf"
-                   target="_blank"
-                   class="btn btn2">
+                <a
+                    href="Images/JS.pdf"
+                    target="_blank"
+                    class="btn btn-primary">
                     View Resume
                 </a>
 
@@ -128,9 +132,9 @@
 
 
 
-<!-- =========================================================
+<!-- ======================================================
      ABOUT
-========================================================= -->
+====================================================== -->
 
 <div id="about">
 
@@ -140,143 +144,109 @@
 
 
             <!-- About Image -->
+
             <div class="about-col-1">
 
-                <img src="Images/Girl.jpg"
-                     alt="Illustration representing Jyothsna">
+                <img
+                    src="Images/Girl.jpg"
+                    alt="Software engineering illustration">
 
             </div>
 
 
             <!-- About Content -->
+
             <div class="about-col-2">
 
                 <h1 class="sub-title">
                     About Me
                 </h1>
 
+                <p class="about-description">
+                    I'm a Software Engineer focused on building intelligent,
+                    scalable, and secure software systems. My work spans
+                    AI engineering, full-stack development, cloud-native
+                    applications, and AI application security.
 
-                <p>
-                    I'm a Software Engineer building AI-powered,
-                    full-stack, and cloud-native applications.
-                </p>
-
-                <p>
-                    My work spans RAG systems, agentic workflows,
-                    enterprise applications, backend APIs, and
-                    secure application architectures. I enjoy turning
-                    complex product requirements into scalable,
-                    reliable software.
+                    I enjoy turning complex engineering problems into
+                    practical products by combining software engineering
+                    fundamentals with modern AI systems.
                 </p>
 
 
-                <!-- =================================================
-                     TABS
-                ================================================== -->
+                <!-- Tabs -->
 
                 <div class="tab-titles">
 
-                    <p class="tab-links active-link"
-                       onclick="opentab(event, 'skills')">
+                    <p
+                        class="tab-links active-link"
+                        onclick="opentab('skills')">
                         Skills
                     </p>
 
-                    <p class="tab-links"
-                       onclick="opentab(event, 'experience')">
+                    <p
+                        class="tab-links"
+                        onclick="opentab('experience')">
                         Experience
                     </p>
 
-                    <p class="tab-links"
-                       onclick="opentab(event, 'education')">
+                    <p
+                        class="tab-links"
+                        onclick="opentab('education')">
                         Education
                     </p>
 
                 </div>
 
 
-                <!-- =================================================
-                     SKILLS
-                ================================================== -->
+                <!-- Skills -->
 
-                <div class="tab-contents active-tab"
-                     id="skills">
+                <div
+                    class="tab-contents active-tab"
+                    id="skills">
 
                     <ul>
 
                         <li>
-                            <span>AI Engineering</span>
-                            RAG · LLMs · LangChain · LangGraph ·
-                            OpenAI · Azure OpenAI
+                            <span>AI / ML Engineering</span>
+                            <br>
+                            RAG, LLM Applications, AI Agents,
+                            Prompt Engineering, Vector Search
                         </li>
 
                         <li>
-                            <span>Frontend</span>
-                            React · Angular · TypeScript · JavaScript
+                            <span>Backend Engineering</span>
+                            <br>
+                            Python, Java, FastAPI, Flask,
+                            Spring Boot, REST APIs
                         </li>
 
                         <li>
-                            <span>Backend</span>
-                            Python · Java · FastAPI · Flask ·
-                            Spring Boot · REST APIs
+                            <span>Frontend Engineering</span>
+                            <br>
+                            JavaScript, TypeScript,
+                            React, Angular
                         </li>
 
                         <li>
                             <span>Cloud & DevOps</span>
-                            Azure · Docker · Kubernetes · GitHub Actions ·
-                            Azure DevOps · CI/CD
+                            <br>
+                            Docker, Kubernetes, GitHub Actions,
+                            Azure, CI/CD
                         </li>
 
                         <li>
-                            <span>Data & AI Infrastructure</span>
-                            PostgreSQL · MySQL · SQLAlchemy · Chroma ·
-                            Qdrant · Vector Search
+                            <span>Databases</span>
+                            <br>
+                            PostgreSQL, SQLAlchemy,
+                            Alembic, SQL
                         </li>
 
                         <li>
-                            <span>Security</span>
-                            Authentication · Authorization · JWT ·
-                            OAuth2 · RBAC · Secure APIs · AI Security
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-
-                <!-- =================================================
-                     EXPERIENCE
-                ================================================== -->
-
-                <div class="tab-contents"
-                     id="experience">
-
-                    <ul>
-
-                        <li>
-                            <span>May 2026 – Present</span>
-                            Software Engineer — Chapter Reading LLC
-                        </li>
-
-                        <li>
-                            <span>May 2025 – Jan 2026</span>
-                            Software Engineer — Coke One North America
-                        </li>
-
-                        <li>
-                            <span>CONA</span>
-                            Software Engineer Intern — Coke One North America
-                        </li>
-
-                        <li>
-                            <span>Jan 2021 – Jul 2023</span>
-                            Junior Software Engineer — Mindtree
-                        </li>
-
-                        <li>
-                            <span>Internship</span>
-                            Software Engineering / Security Intern —
-                            Securium Fox
+                            <span>Application Security</span>
+                            <br>
+                            OAuth2, JWT, RBAC,
+                            API Security and Secure AI Applications
                         </li>
 
                     </ul>
@@ -284,27 +254,59 @@
                 </div>
 
 
+                <!-- Experience -->
 
-                <!-- =================================================
-                     EDUCATION
-                ================================================== -->
-
-                <div class="tab-contents"
-                     id="education">
+                <div
+                    class="tab-contents"
+                    id="experience">
 
                     <ul>
 
                         <li>
-                            <span>Western Illinois University</span>
-                            Master of Science in Computer Science
+                            <span>
+                                Software Engineer — Coke One North America
+                            </span>
+                            <br>
+                            May 2025 - Present
+                        </li>
+
+                        <li>
+                            <span>
+                                Security Intern — Securium Fox
+                            </span>
+                            <br>
+                            2022
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Education -->
+
+                <div
+                    class="tab-contents"
+                    id="education">
+
+                    <ul>
+
+                        <li>
+                            <span>
+                                Master's in Computer & Information Systems
+                            </span>
+                            <br>
+                            Western Illinois University
+                            <br>
+                            May 2025
                             <br>
                             GPA: 3.75 / 4.0
                         </li>
 
                         <li>
-                            <span>Relevant Coursework</span>
-                            Artificial Intelligence · Software Engineering ·
-                            Computer Architecture · SQL
+                            <span>
+                                Bachelor's in Information Technology
+                            </span>
                         </li>
 
                     </ul>
@@ -321,9 +323,9 @@
 
 
 
-<!-- =========================================================
+<!-- ======================================================
      WHAT I BUILD
-========================================================= -->
+====================================================== -->
 
 <div id="services">
 
@@ -337,108 +339,81 @@
         <div class="services-list">
 
 
-            <!-- =================================================
-                 AI ENGINEERING
-            ================================================== -->
+            <!-- AI Engineering -->
 
-            <div>
+            <div class="service-card">
+
+                <i class="fa-solid fa-brain"></i>
 
                 <h2>
                     AI Engineering
                 </h2>
 
                 <p>
-                    RAG systems, LLM applications, intelligent agents,
-                    and AI-powered workflows.
-                </p>
-
-                <p>
-                    <strong>
-                        OpenAI · LangChain · LangGraph · RAG ·
-                        Vector Search
-                    </strong>
+                    Production-oriented AI applications using RAG,
+                    LLMs, vector retrieval, agentic workflows,
+                    prompt engineering, and evaluation pipelines.
                 </p>
 
             </div>
 
 
+            <!-- Full Stack -->
 
-            <!-- =================================================
-                 FULL STACK
-            ================================================== -->
+            <div class="service-card">
 
-            <div>
+                <i class="fa-solid fa-code"></i>
 
                 <h2>
                     Full-Stack Engineering
                 </h2>
 
                 <p>
-                    Scalable web applications across frontend,
-                    backend, APIs, databases, and integrations.
-                </p>
-
-                <p>
-                    <strong>
-                        React · Angular · Python · Java ·
-                        FastAPI · PostgreSQL
-                    </strong>
+                    End-to-end applications using modern frontend
+                    frameworks, backend APIs, databases, authentication,
+                    and scalable application architecture.
                 </p>
 
             </div>
 
 
+            <!-- Cloud -->
 
-            <!-- =================================================
-                 CLOUD
-            ================================================== -->
+            <div class="service-card">
 
-            <div>
+                <i class="fa-solid fa-cloud"></i>
 
                 <h2>
                     Cloud & Platform Engineering
                 </h2>
 
                 <p>
-                    Cloud-native applications, containerized
-                    infrastructure, automated deployments,
-                    and CI/CD workflows.
-                </p>
-
-                <p>
-                    <strong>
-                        Azure · Docker · Kubernetes ·
-                        GitHub Actions · CI/CD
-                    </strong>
+                    Containerized applications, CI/CD pipelines,
+                    cloud deployment, observability, and infrastructure
+                    designed for reliable production environments.
                 </p>
 
             </div>
 
 
+            <!-- Security -->
 
-            <!-- =================================================
-                 AI SECURITY
-            ================================================== -->
+            <div class="service-card">
 
-            <div>
+                <i class="fa-solid fa-shield-halved"></i>
 
                 <h2>
                     AI Application Security
                 </h2>
 
                 <p>
-                    Secure AI architectures with controlled access,
-                    protected data, and safer AI workflows.
-                </p>
-
-                <p>
-                    <strong>
-                        OAuth2 · RBAC · Secure APIs ·
-                        RAG Security · AI Security
-                    </strong>
+                    Secure AI and software applications using
+                    authentication, authorization, RBAC, API security,
+                    data protection, and secure engineering practices.
                 </p>
 
             </div>
+
 
         </div>
 
@@ -448,9 +423,9 @@
 
 
 
-<!-- =========================================================
-     PORTFOLIO / PROJECTS
-========================================================= -->
+<!-- ======================================================
+     SELECTED WORK
+====================================================== -->
 
 <div id="portfolio">
 
@@ -464,93 +439,104 @@
         <div class="work-list">
 
 
-            <!-- =================================================
-                 PROJECT 1
-            ================================================== -->
+            <!-- Project 1 -->
 
             <div class="work">
 
-                <img src="Images/Cam Scanner.png"
-                     alt="Document Scanner Application">
+                <img
+                    src="Images/Cam Scanner.png"
+                    alt="AI project">
 
                 <div class="layer">
 
                     <h3>
-                        Document Scanner
+                        AI-Powered Application
                     </h3>
 
                     <p>
-                        Mobile document scanning and cloud
-                        synchronization application.
+                        An intelligent application designed around
+                        AI-powered processing and practical
+                        user workflows.
                     </p>
+
+                    <a href="#">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
 
                 </div>
 
             </div>
 
 
-
-            <!-- =================================================
-                 PROJECT 2
-            ================================================== -->
+            <!-- Project 2 -->
 
             <div class="work">
 
-                <img src="Images/Mobile.png"
-                     alt="Mobile Banking Application">
+                <img
+                    src="Images/Mobile.png"
+                    alt="Full-stack application">
 
                 <div class="layer">
 
                     <h3>
-                        Mobile Banking Platform
+                        Full-Stack Platform
                     </h3>
 
                     <p>
-                        Banking interface for account access,
-                        transactions, balance tracking,
-                        and fund transfers.
+                        A full-stack application combining frontend
+                        experiences, backend services, APIs,
+                        and data-driven functionality.
                     </p>
+
+                    <a href="#">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
 
                 </div>
 
             </div>
 
 
-
-            <!-- =================================================
-                 PROJECT 3
-            ================================================== -->
+            <!-- Project 3 -->
 
             <div class="work">
 
-                <img src="Images/Detection.png"
-                     alt="NLP and Computer Vision Detection System">
+                <img
+                    src="Images/Detection.png"
+                    alt="AI detection project">
 
                 <div class="layer">
 
                     <h3>
-                        Illicit Content Detection
+                        Intelligent Detection System
                     </h3>
 
                     <p>
-                        NLP and computer vision system for
-                        identifying indicators of illicit activity
-                        in social-media content.
+                        An AI-focused project exploring intelligent
+                        detection, automated processing,
+                        and software integration.
                     </p>
+
+                    <a href="#">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
 
                 </div>
 
             </div>
+
 
         </div>
 
 
-        <!-- Optional future projects button -->
-        <!--
-        <a href="#" class="btn">
-            View All Projects
+        <a
+            href="https://github.com/JyothsnaVellanki22"
+            target="_blank"
+            class="btn portfolio-btn">
+
+            View GitHub
+
         </a>
-        -->
 
     </div>
 
@@ -558,9 +544,9 @@
 
 
 
-<!-- =========================================================
+<!-- ======================================================
      CONTACT
-========================================================= -->
+====================================================== -->
 
 <div id="contact">
 
@@ -569,75 +555,48 @@
         <div class="row">
 
 
-            <!-- =================================================
-                 CONTACT INFORMATION
-            ================================================== -->
+            <!-- Contact Left -->
 
             <div class="contact-left">
 
                 <h1 class="sub-title">
-                    Get In Touch
+                    Let's Connect
                 </h1>
 
-                <p>
-                    Interested in software engineering, AI/ML,
-                    full-stack development, cloud systems,
-                    or AI application security?
+                <p class="contact-description">
+                    Interested in software engineering, AI systems,
+                    or building something useful? Feel free to reach out.
                 </p>
 
-                <p>
-                    I'm always open to connecting with engineers,
-                    recruiters, researchers, and teams building
-                    interesting technology.
-                </p>
-
-
-                <!-- Social Links -->
 
                 <div class="social-icons">
 
+                    <a
+                        href="https://www.linkedin.com/in/jyothsna-sri-vellanki"
+                        target="_blank"
+                        aria-label="LinkedIn">
 
-                    <!-- EMAIL -->
-
-                    <a href="mailto:jyothsna@example.com"
-                       aria-label="Email Jyothsna">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                    </a>
-
-
-                    <!-- LINKEDIN -->
-
-                    <a href="https://www.linkedin.com/in/jyothsna-sri-vellanki"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="LinkedIn">
-
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
 
                     </a>
 
 
-                    <!-- GITHUB -->
+                    <a
+                        href="https://github.com/JyothsnaVellanki22"
+                        target="_blank"
+                        aria-label="GitHub">
 
-                    <a href="https://github.com/JyothsnaVellanki22"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="GitHub">
-
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fab fa-github"></i>
 
                     </a>
 
                 </div>
 
 
-                <!-- Resume -->
-
-                <a href="Images/JS.pdf"
-                   target="_blank"
-                   class="btn btn2">
+                <a
+                    href="Images/JS.pdf"
+                    target="_blank"
+                    class="btn btn2">
 
                     View Resume
 
@@ -646,43 +605,39 @@
             </div>
 
 
-
-            <!-- =================================================
-                 CONTACT FORM
-            ================================================== -->
+            <!-- Contact Form -->
 
             <div class="contact-right">
 
                 <form name="submit-to-google-sheet">
 
-                    <input type="text"
-                           name="Name"
-                           placeholder="Your Name"
-                           autocomplete="name"
-                           required>
+                    <input
+                        type="text"
+                        name="Name"
+                        placeholder="Your Name"
+                        required>
 
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="Your Email"
+                        required>
 
-                    <input type="email"
-                           name="Email"
-                           placeholder="Your Email"
-                           autocomplete="email"
-                           required>
+                    <textarea
+                        name="Message"
+                        rows="6"
+                        placeholder="Your Message">
+                    </textarea>
 
-
-                    <textarea name="Message"
-                              rows="6"
-                              placeholder="Your Message"></textarea>
-
-
-                    <button type="submit"
-                            class="btn btn2">
+                    <button
+                        type="submit"
+                        class="btn btn2">
 
                         Send Message
 
                     </button>
 
                 </form>
-
 
                 <span id="msg"></span>
 
@@ -696,16 +651,15 @@
 
 
 
-<!-- =========================================================
+<!-- ======================================================
      JAVASCRIPT
-========================================================= -->
-
-
-<!-- =========================================================
-     TABS
-========================================================= -->
+====================================================== -->
 
 <script>
+
+    /* -------------------------
+       ABOUT TABS
+    ------------------------- */
 
     const tablinks =
         document.getElementsByClassName("tab-links");
@@ -714,93 +668,67 @@
         document.getElementsByClassName("tab-contents");
 
 
-    function opentab(event, tabname) {
+    function opentab(tabname) {
 
-        for (let tablink of tablinks) {
-
+        for (const tablink of tablinks) {
             tablink.classList.remove("active-link");
-
         }
 
-
-        for (let tabcontent of tabcontents) {
-
+        for (const tabcontent of tabcontents) {
             tabcontent.classList.remove("active-tab");
-
         }
-
 
         event.currentTarget.classList.add("active-link");
 
         document
             .getElementById(tabname)
             .classList.add("active-tab");
-
     }
 
-</script>
 
 
-
-<!-- =========================================================
-     MOBILE MENU
-========================================================= -->
-
-<script>
+    /* -------------------------
+       MOBILE MENU
+    ------------------------- */
 
     const sidemenu =
         document.getElementById("sidemenu");
 
 
     function openmenu() {
-
         sidemenu.style.right = "0";
-
     }
 
 
     function closemenu() {
-
         sidemenu.style.right = "-220px";
-
     }
 
-</script>
 
 
-
-<!-- =========================================================
-     GOOGLE SHEETS CONTACT FORM
-========================================================= -->
-
-<script>
+    /* -------------------------
+       CONTACT FORM
+    ------------------------- */
 
     const scriptURL =
-        'https://script.google.com/macros/s/AKfycbz9-EXROg3VhcsowzHZKsYhHAX-aM5JaH2Plh9OvysjmMM0Bocm5q7Dgn5z5KASJ7Y8/exec';
-
+        "https://script.google.com/macros/s/AKfycbz9-EXROg3VhcsowzHZKsYhHAX-aM5JaH2Plh9OvysjmMM0Bocm5q7Dgn5z5KASJ7Y8/exec";
 
     const form =
-        document.forms['submit-to-google-sheet'];
-
+        document.forms["submit-to-google-sheet"];
 
     const msg =
         document.getElementById("msg");
 
 
-    form.addEventListener('submit', e => {
+    form.addEventListener("submit", e => {
 
         e.preventDefault();
 
-
         msg.innerHTML = "Sending...";
 
-
         fetch(scriptURL, {
-
-            method: 'POST',
-
+            method: "POST",
             body: new FormData(form)
-
         })
 
         .then(response => {
@@ -808,24 +736,17 @@
             msg.innerHTML =
                 "Message sent successfully.";
 
-            form.reset();
-
-
-            setTimeout(() => {
-
+            setTimeout(function () {
                 msg.innerHTML = "";
-
             }, 5000);
+
+            form.reset();
 
         })
 
-
         .catch(error => {
 
-            console.error(
-                'Error!',
-                error.message
-            );
+            console.error("Error!", error.message);
 
             msg.innerHTML =
                 "Something went wrong. Please try again.";
@@ -838,4 +759,5 @@
 
 
 </body>
+
 </html>
