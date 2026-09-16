@@ -41,7 +41,7 @@ a {
 
 
 /* =========================================================
-   HEADER
+   HEADER / HERO BACKGROUND
 ========================================================= */
 
 #header {
@@ -87,7 +87,6 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
-
     gap: 42px;
 
     list-style: none;
@@ -151,7 +150,7 @@ nav ul li a:hover::after {
     font-size: 20px;
     font-weight: 400;
 
-    color: #eeeeee;
+    color: #ffffff;
 
     margin-bottom: 8px;
 }
@@ -164,6 +163,8 @@ nav ul li a:hover::after {
     line-height: 1.08;
 
     margin-top: 12px;
+
+    color: #ffffff;
 }
 
 .header-text h1 span {
@@ -190,7 +191,7 @@ nav ul li a:hover::after {
 
     line-height: 1.8;
 
-    color: #dddddd;
+    color: #ffffff;
 }
 
 
@@ -248,8 +249,8 @@ nav ul li a:hover::after {
 /* =========================================================
    SECTION BACKGROUNDS
 
-   No additional dark overlay here.
-   This restores the appearance of your older version.
+   Original lighter background preserved.
+   No additional dark overlay.
 ========================================================= */
 
 #about,
@@ -306,7 +307,7 @@ nav ul li a:hover::after {
 /* =========================================================
    ABOUT IMAGE
 
-   Keeps image close to your older portfolio dimensions.
+   Keeps the image close to the size of the old version.
 ========================================================= */
 
 .about-col-1 {
@@ -317,6 +318,7 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
     width: 100%;
+
     max-width: 430px;
 
     height: auto;
@@ -344,7 +346,7 @@ nav ul li a:hover::after {
 
     line-height: 1.85;
 
-    color: #dddddd;
+    color: #ffffff;
 }
 
 
@@ -390,7 +392,7 @@ nav ul li a:hover::after {
 
     position: relative;
 
-    color: #dddddd;
+    color: #ffffff;
 
     padding-bottom: 8px;
 
@@ -453,8 +455,11 @@ nav ul li a:hover::after {
 
     line-height: 1.65;
 
-    color: #dddddd;
+    color: #ffffff;
 }
+
+
+/* Pink headings inside Skills / Experience / Education */
 
 .tab-contents ul li span {
     color: #e97fb2;
@@ -552,10 +557,8 @@ nav ul li a:hover::after {
 /* =========================================================
    SELECTED WORK / PORTFOLIO
 
-   IMPORTANT:
+   Images use their natural/original dimensions.
    No forced 4:3 aspect ratio.
-   Images use their original dimensions just like
-   your older portfolio.
 ========================================================= */
 
 #portfolio {
@@ -630,6 +633,8 @@ nav ul li a:hover::after {
 
     font-size: 14px;
 
+    color: #ffffff;
+
     transition: height 0.5s ease;
 }
 
@@ -639,6 +644,8 @@ nav ul li a:hover::after {
     font-weight: 700;
 
     margin-bottom: 15px;
+
+    color: #ffffff;
 }
 
 .layer p {
@@ -647,6 +654,8 @@ nav ul li a:hover::after {
     line-height: 1.6;
 
     margin-bottom: 18px;
+
+    color: #ffffff;
 }
 
 .layer a {
@@ -721,7 +730,7 @@ nav ul li a:hover::after {
 
 
 /* =========================================================
-   CONTACT LEFT
+   CONTACT TEXT
 ========================================================= */
 
 .contact-description {
@@ -731,7 +740,17 @@ nav ul li a:hover::after {
 
     line-height: 1.8;
 
-    color: #dddddd;
+    color: #ffffff;
+}
+
+.contact-left p {
+    color: #ffffff;
+}
+
+.contact-left p a {
+    color: #ffffff;
+
+    text-decoration: none;
 }
 
 
@@ -779,6 +798,8 @@ nav ul li a:hover::after {
 
     border-color: #ad7e97;
 
+    color: #ffffff;
+
     margin-top: 30px;
 }
 
@@ -822,9 +843,14 @@ form textarea {
         background 0.3s ease;
 }
 
+
+/* Keep placeholders dark because form fields are light pink */
+
 form input::placeholder,
 form textarea::placeholder {
-    color: #555555;
+    color: #444444;
+
+    opacity: 1;
 }
 
 form input:focus,
@@ -858,7 +884,7 @@ form .btn2 {
 ========================================================= */
 
 #msg {
-    color: #ad7e97;
+    color: #ffffff;
 
     margin-top: 15px;
 
@@ -967,7 +993,7 @@ nav .fas {
 
 
     /* =====================================================
-       MOBILE NAV
+       MOBILE NAVIGATION
     ===================================================== */
 
     nav {
@@ -1014,6 +1040,8 @@ nav .fas {
 
     nav ul li a {
         font-size: 17px;
+
+        color: #ffffff;
     }
 
     nav ul .fas {
@@ -1036,6 +1064,8 @@ nav .fas {
 
     .hero-role {
         font-size: 17px;
+
+        color: #ffffff;
     }
 
     .header-text h1 {
@@ -1052,6 +1082,8 @@ nav .fas {
         line-height: 1.6;
 
         margin-top: 15px;
+
+        color: #ffffff;
     }
 
     .hero-description {
@@ -1060,6 +1092,8 @@ nav .fas {
         line-height: 1.7;
 
         margin-top: 14px;
+
+        color: #ffffff;
     }
 
     .hero-actions {
@@ -1120,6 +1154,8 @@ nav .fas {
         font-size: 14px;
 
         line-height: 1.75;
+
+        color: #ffffff;
     }
 
 
@@ -1133,6 +1169,8 @@ nav .fas {
         line-height: 1.15;
 
         margin-bottom: 18px;
+
+        color: #ffffff;
     }
 
 
@@ -1150,12 +1188,16 @@ nav .fas {
 
     .tab-links {
         font-size: 15px;
+
+        color: #ffffff;
     }
 
     .tab-contents ul li {
         font-size: 14px;
 
         margin: 15px 0;
+
+        color: #ffffff;
     }
 
 
@@ -1188,8 +1230,6 @@ nav .fas {
 
     /* =====================================================
        PORTFOLIO
-
-       Natural image ratio maintained on mobile.
     ===================================================== */
 
     #portfolio {
@@ -1216,6 +1256,12 @@ nav .fas {
 
     .layer h3 {
         font-size: 20px;
+
+        color: #ffffff;
+    }
+
+    .layer p {
+        color: #ffffff;
     }
 
 
@@ -1242,6 +1288,8 @@ nav .fas {
 
     .contact-description {
         font-size: 14px;
+
+        color: #ffffff;
     }
 
     .social-icons {
@@ -1294,6 +1342,8 @@ nav .fas {
 
     .tab-links {
         font-size: 14px;
+
+        color: #ffffff;
     }
 
     .about-col-1 {
@@ -1304,4 +1354,54 @@ nav .fas {
         max-width: 300px;
     }
 
+}
+
+
+/* =========================================================
+   FINAL TEXT VISIBILITY / CONTRAST OVERRIDES
+
+   Ensures gray text does not override the white text
+   in the About and Contact sections.
+========================================================= */
+
+#about p,
+#about li,
+#about .tab-links,
+#contact p {
+    color: #ffffff;
+}
+
+
+/* Keep Skills / Experience / Education headings pink */
+
+#about .tab-contents ul li span {
+    color: #e97fb2;
+}
+
+
+/* Keep all main section headings white */
+
+#about .sub-title,
+#services .sub-title,
+#portfolio .sub-title,
+#contact .sub-title {
+    color: #ffffff;
+}
+
+
+/* Keep contact form input text dark for contrast */
+
+#contact form input,
+#contact form textarea {
+    color: #171717;
+}
+
+
+/* Keep placeholders dark and readable */
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: #444444;
+
+    opacity: 1;
 }
