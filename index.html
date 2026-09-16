@@ -1,216 +1,753 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+```
+<title>Jyothsna Vellanki | Software Engineer | AI/ML | Full Stack</title>
+
+<meta name="description"
+    content="Jyothsna Vellanki is a Software Engineer specializing in AI/ML, full-stack development, RAG applications, agentic workflows, cloud-native systems, and AI application security.">
+
+<meta name="keywords"
+    content="Jyothsna Vellanki, Software Engineer, AI Engineer, AI ML Engineer, Full Stack Engineer, Python, React, Angular, FastAPI, Flask, Java, Spring Boot, RAG, LLM, LangChain, LangGraph, Azure, PostgreSQL, AI Security">
+
+<meta name="author" content="Jyothsna Vellanki">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
+
 <body>
+
+<!-- ================= HEADER ================= -->
+
 <div id="header">
     <div class="container">
-        
-       <nav>
-            <div class="col-md-3"> <!-- <img src="Images/Logo.png" class="Logo"> --></div>
-            <div class="col-md-9"><ul id="sidemenu">
+
+```
+    <nav>
+        <div class="col-md-3">
+            <!-- Optional logo -->
+            <!-- <img src="Images/Logo.png" class="Logo"> -->
+        </div>
+
+        <div class="col-md-9">
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">What I Build</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
-            </div>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-       </nav>
-           <div class="header-text"> 
-                 <h3>Software Engineer</h3>
-                 <h1>Hi, I'm Jyothsna </h1>
-       </div>
+        </div>
+
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header-text">
+
+        <h3>Software Engineer</h3>
+
+        <h1>
+            Hi, I'm <span>Jyothsna</span>
+        </h1>
+
+        <p>
+            AI/ML • Full Stack • Cloud • AI Security
+        </p>
+
+        <p>
+            Building AI-powered applications, enterprise software,
+            RAG systems, agentic workflows, and secure cloud-native solutions.
+        </p>
+
+        <div style="margin-top: 25px;">
+
+            <a href="#portfolio" class="btn">
+                View My Work
+            </a>
+
+            <a href="Images/JS.pdf" download class="btn btn2">
+                View Resume
+            </a>
+
+        </div>
+
     </div>
+
 </div>
-<!-- -------------ABOUT------------------ -->
+```
+
+</div>
+
+<!-- ================= ABOUT ================= -->
+
 <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Images/Girl.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Experienced Software Engineer with over 3 years of expertise in full stack development, mobile application development, including hands-on Android development, Android Studio, and modern mobile UI frameworks. 
-                Experienced in building scalable applications, integrating RESTful APIs, implementing CI/CD pipelines, and working in Agile SDLC environments. Strong background in retail-industry software through work at CONA Services, supporting enterprise-level digital solutions and collaborating closely with cross-functional teams, product owners, and clients to translate requirements into production-ready features. 
-                Proficient in frameworks like Angular, and Node.js for building scalable and secure web applications and skilled in Python and Flask for backend development. 
-                Strong knowledge of relational databases MySQL, PostgreSQL and hands-on experience with version control systems like Git and GitHub.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2025-Present</span><br>Software Engineer at Coke One North America</li>
-                            <li><span>2022-2023</span><br>Software Engineer Intern at Securium Fox Technologies</li>
-                            <li><span>2021-2021</span><br>Software Engineer Intern at Securium Fox Technologies</li>
-                            <li><span>2020-2020</span><br>Software Engineer Intern at Techolution</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br>Master of Science in Computer Science from Western Illinois University</li>
-                            <li><span>2019</span><br>B.Tech in Information Technology from RVR & JC College of Engineering</li>
-                        </ul>
-                    </div>
-            </div>
+
+```
+<div class="container">
+
+    <div class="row">
+
+        <div class="about-col-1">
+            <img src="Images/Girl.jpg">
         </div>
+
+        <div class="about-col-2">
+
+            <h1 class="sub-title">About Me</h1>
+
+            <p>
+                I’m a Software Engineer focused on building AI-powered,
+                full-stack, and cloud-native applications. My experience
+                spans enterprise software, AI/ML systems, RAG applications,
+                agentic workflows, backend APIs, data-driven applications,
+                and customer-facing digital experiences.
+            </p>
+
+            <br>
+
+            <p>
+                I work across the stack using technologies including
+                React, Angular, TypeScript, Python, Java, FastAPI, Flask,
+                Spring Boot, PostgreSQL, Docker, Kubernetes, and Azure.
+                I enjoy translating business and operational requirements
+                into scalable technical solutions while working closely
+                with product, engineering, QA, and business stakeholders.
+            </p>
+
+            <br>
+
+            <p>
+                At Chapter Reading, I work on an AI-powered reading
+                engagement platform using React, TypeScript, PostgreSQL,
+                and Supabase, supporting student workflows, course content,
+                reading progress, annotations, engagement analytics,
+                authentication, and professor-facing experiences.
+            </p>
+
+            <br>
+
+            <p>
+                Previously at Coke One North America, I worked on enterprise
+                Trade Promotion Optimization applications and an
+                AI-powered Agent Platform using Retrieval-Augmented
+                Generation, Python, FastAPI, Flask, Angular, PostgreSQL,
+                LangChain, LangGraph, Docker, and CI/CD.
+            </p>
+
+            <br>
+
+            <p>
+                I’m also increasingly focused on the intersection of
+                <strong>AI engineering and application security</strong>,
+                including secure AI architectures, authentication and
+                authorization, RAG security, agent security,
+                vulnerability assessment, and reliable AI application
+                design.
+            </p>
+
+
+            <!-- ================= TABS ================= -->
+
+            <div class="tab-titles">
+
+                <p class="tab-links active-link"
+                   onclick="opentab(event, 'skills')">
+                    Skills
+                </p>
+
+                <p class="tab-links"
+                   onclick="opentab(event, 'experience')">
+                    Experience
+                </p>
+
+                <p class="tab-links"
+                   onclick="opentab(event, 'education')">
+                    Education
+                </p>
+
+            </div>
+
+
+            <!-- ================= SKILLS TAB ================= -->
+
+            <div class="tab-contents active-tab" id="skills">
+
+                <ul>
+
+                    <li>
+                        <span>AI / ML</span>
+                        <br>
+                        RAG, LLMs, LangChain, LangGraph, Google ADK,
+                        OpenAI, Azure OpenAI, Claude, Hugging Face,
+                        Prompt Engineering, NLP, Machine Learning,
+                        Computer Vision
+                    </li>
+
+                    <li>
+                        <span>Full Stack Development</span>
+                        <br>
+                        React, Angular, TypeScript, JavaScript, Python,
+                        Java, FastAPI, Flask, Node.js, Spring Boot,
+                        REST APIs, WebSockets
+                    </li>
+
+                    <li>
+                        <span>Cloud & DevOps</span>
+                        <br>
+                        Azure, Docker, Kubernetes, GitHub Actions,
+                        Azure DevOps, Git, CI/CD, Linux
+                    </li>
+
+                    <li>
+                        <span>Data & AI Infrastructure</span>
+                        <br>
+                        PostgreSQL, MySQL, SQLAlchemy, Alembic,
+                        Chroma, Qdrant, Pandas, NumPy,
+                        Vector Search, Embeddings
+                    </li>
+
+                    <li>
+                        <span>Security</span>
+                        <br>
+                        Authentication, Authorization, JWT, OAuth2,
+                        RBAC, Secure APIs, Vulnerability Assessment,
+                        Cryptographic Security, AI Application Security
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= EXPERIENCE TAB ================= -->
+
+            <div class="tab-contents" id="experience">
+
+                <ul>
+
+                    <li>
+                        <span>May 2026 - Present</span>
+                        <br>
+                        Software Engineer — Chapter Reading LLC
+                    </li>
+
+                    <li>
+                        <span>May 2025 - Jan 2026</span>
+                        <br>
+                        Software Engineer — Coke One North America
+                    </li>
+
+                    <li>
+                        <span>CONA</span>
+                        <br>
+                        Software Engineer Intern — Coke One North America
+                    </li>
+
+                    <li>
+                        <span>Jan 2021 - Jul 2023</span>
+                        <br>
+                        Junior Software Engineer — Mindtree
+                    </li>
+
+                    <li>
+                        <span>Internship</span>
+                        <br>
+                        Software Engineering / Security Intern —
+                        Securium Fox
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= EDUCATION TAB ================= -->
+
+            <div class="tab-contents" id="education">
+
+                <ul>
+
+                    <li>
+                        <span>Western Illinois University</span>
+                        <br>
+                        Master of Science in Computer Science
+                        <br>
+                        GPA: 3.75 / 4.0
+                    </li>
+
+                    <li>
+                        <span>Relevant Coursework</span>
+                        <br>
+                        Artificial Intelligence, Software Engineering,
+                        Computer Architecture, SQL
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
     </div>
+
 </div>
-<!-- -------------SERVICES------------------ -->
- <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My services</h1>
-        <div class="services-list">
-            <div>
-                <h2>Web Designing</h2>
-                <p>A highly skilled web developer having experience in designing, developing, and maintaining responsive web applications. 
-                Proficient in front-end and back-end technologies, including HTML, CSS, JavaScript, Angular, and Node.js. 
-                Developed projects like a Personal Portfolio Website, CamScanner and Mobile Banking Systems showcased full-stack development and database integration expertise.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <h2>AI/ML</h2>
-                <p>A results-driven Machine Learning Engineer with experience in Python, AI, and ML, specializing in building and deploying intelligent solutions. 
-                Proficient in TensorFlow, PyTorch, Scikit-Learn, and OpenCV, with expertise in data preprocessing, model training, and deep learning architectures.
-                Skilled in Natural Language Processing (NLP) and Computer Vision, with hands-on experience in projects like Detection of Illicit Messages Using NLP and Computer Vision on Social Media and Cam Scanner for document processing with OCR.
-                Adept at integrating ML models into scalable applications and optimizing performance for real-world deployment.
-                CamScanner and Mobile Banking Systems showcased full-stack development and database integration expertise.</p>
-                <a href="#">Learn More</a>
-            </div>
+```
+
+</div>
+
+<!-- ================= WHAT I BUILD ================= -->
+
+<div id="services">
+
+```
+<div class="container">
+
+    <h1 class="sub-title">What I Build</h1>
+
+    <div class="services-list">
+
+
+        <!-- AI ENGINEERING -->
+
+        <div>
+
+            <h2>AI Engineering</h2>
+
+            <p>
+                Building AI-powered applications using large language
+                models, Retrieval-Augmented Generation, vector search,
+                agentic workflows, tool calling, and context-aware
+                application architectures.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>
+                    OpenAI • Azure OpenAI • Claude • LangChain •
+                    LangGraph • Google ADK • RAG • Chroma • Qdrant
+                </strong>
+            </p>
+
         </div>
-    </div>
- </div>
-<!-- -----------PORTFOLIO---------------- -->
- <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="Images/Cam Scanner.png">
-                <div class="layer">
-                    <h3>CAM SCANNER APP</h3>
-                    <p>This app helps to scan your documents and store it. 
-                    Also you can sync them with cloud. </p>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/Mobile.png">
-                <div class="layer">
-                    <h3> Mobile Banking APP</h3>
-                    <p>This app helps to login to your bank account and 
-                    check for transactions, balance checks, and fund transfers. 
-                    Also you can Pay throught this app. </p>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/Detection.png">
-                <div class="layer">
-                    <h3>Detection of Illicit Messages Using NLP and CV</h3>
-                    <p>This app is a human trafficking indicators on social media, assisting law enforcement. </p>
-                </div>
-            </div>
+
+
+        <!-- FULL STACK -->
+
+        <div>
+
+            <h2>Full-Stack Engineering</h2>
+
+            <p>
+                Developing scalable customer-facing and enterprise
+                applications across frontend, backend, database,
+                authentication, APIs, and integration layers.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>
+                    React • Angular • TypeScript • Python • Java •
+                    FastAPI • Flask • Spring Boot • PostgreSQL
+                </strong>
+            </p>
+
         </div>
-        <a href="#" class="btn">See More</a>
-    </div>
- </div>
- <!-- -----------CONTACT---------------- -->
-  <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">GET IN TOUCH</h1>
-                <div class="social-icons">
-                    &nbsp;<a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-</svg></a>
-                    <a href="https://www.linkedin.com/in/jyothsna-sri-vellanki"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-</svg></a>
-                    <a href="https://github.com/JyothsnaVellanki22"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-</svg></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-</svg></a>
-                </div>
-                <a href="Images/JS.pdf" download class="btn btn2">Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+
+
+        <!-- CLOUD -->
+
+        <div>
+
+            <h2>Cloud & Platform Engineering</h2>
+
+            <p>
+                Building and supporting cloud-native applications using
+                containers, CI/CD pipelines, cloud infrastructure,
+                automated testing, monitoring, and production deployment
+                practices.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>
+                    Azure • Docker • Kubernetes • GitHub Actions •
+                    Azure DevOps • Linux • CI/CD
+                </strong>
+            </p>
+
         </div>
+
+
+        <!-- AI SECURITY -->
+
+        <div>
+
+            <h2>AI Application Security</h2>
+
+            <p>
+                Exploring the security challenges involved in deploying
+                AI-powered applications, with a focus on secure RAG
+                architectures, agent security, authentication,
+                authorization, data protection, and AI application
+                vulnerabilities.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>
+                    AI Security • RAG Security • Agent Security •
+                    JWT • OAuth2 • RBAC • Secure APIs •
+                    Vulnerability Assessment
+                </strong>
+            </p>
+
+        </div>
+
     </div>
-  </div>
+
+</div>
+```
+
+</div>
+
+<!-- ================= PORTFOLIO ================= -->
+
+<!--
+    PROJECTS SECTION INTENTIONALLY LEFT UNCHANGED
+    AS REQUESTED.
+-->
+
+<div id="portfolio">
+
+```
+<div class="container">
+
+    <h1 class="sub-title">My Work</h1>
+
+    <div class="work-list">
+
+        <div class="work">
+
+            <img src="Images/Cam Scanner.png">
+
+            <div class="layer">
+
+                <h3>CAM SCANNER APP</h3>
+
+                <p>
+                    This app helps to scan your documents and store it.
+                    Also you can sync them with cloud.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="work">
+
+            <img src="Images/Mobile.png">
+
+            <div class="layer">
+
+                <h3> Mobile Banking APP</h3>
+
+                <p>
+                    This app helps to login to your bank account and
+                    check for transactions, balance checks, and fund transfers.
+                    Also you can Pay throught this app.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="work">
+
+            <img src="Images/Detection.png">
+
+            <div class="layer">
+
+                <h3>Detection of Illicit Messages Using NLP and CV</h3>
+
+                <p>
+                    This app is a human trafficking indicators on social media,
+                    assisting law enforcement.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="#" class="btn">See More</a>
+
+</div>
+```
+
+</div>
+
+<!-- ================= CONTACT ================= -->
+
+<div id="contact">
+
+```
+<div class="container">
+
+    <div class="row">
+
+
+        <!-- CONTACT LEFT -->
+
+        <div class="contact-left">
+
+            <h1 class="sub-title">GET IN TOUCH</h1>
+
+            <p>
+                Interested in software engineering, AI/ML,
+                full-stack development, cloud systems, or
+                AI application security?
+            </p>
+
+            <br>
+
+            <p>
+                I’m always open to connecting with engineers,
+                recruiters, researchers, and teams building
+                interesting technology.
+            </p>
+
+
+            <div class="social-icons">
+
+                <!-- EMAIL -->
+
+                <a href="mailto:jyothsna@example.com"
+                   aria-label="Email Jyothsna">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="16"
+                         height="16"
+                         fill="currentColor"
+                         class="bi bi-envelope-fill"
+                         viewBox="0 0 16 16">
+
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a href="https://www.linkedin.com/in/jyothsna-sri-vellanki"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="16"
+                         height="16"
+                         fill="currentColor"
+                         class="bi bi-linkedin"
+                         viewBox="0 0 16 16">
+
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a href="https://github.com/JyothsnaVellanki22"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="16"
+                         height="16"
+                         fill="currentColor"
+                         class="bi bi-github"
+                         viewBox="0 0 16 16">
+
+                        <path d="M8 0C3.58 0 0 2.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <!-- RESUME -->
+
+            <a href="Images/JS.pdf"
+               download
+               class="btn btn2">
+
+                Download Resume
+
+            </a>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-right">
+
+            <form name="submit-to-google-sheet">
+
+                <input type="text"
+                       name="Name"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       name="Email"
+                       placeholder="Your Email"
+                       required>
+
+                <textarea name="Message"
+                          rows="6"
+                          placeholder="Your Message"></textarea>
+
+                <button type="submit"
+                        class="btn btn2">
+
+                    Submit
+
+                </button>
+
+            </form>
+
+            <span id="msg"></span>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
 
 <script>
-   
-   var tablinks = document.getElementsByClassName("tab-links");
+
+    /* ================= TABS ================= */
+
+    var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
+
+    function opentab(event, tabname) {
+
+        for (tablink of tablinks) {
             tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
+
+        for (tabcontent of tabcontents) {
             tabcontent.classList.remove("active-tab");
         }
+
         event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
+
+        document.getElementById(tabname).classList.add("active-tab");
     }
+
 </script>
 
 <script>
+
+    /* ================= MOBILE MENU ================= */
+
     var sidemenu = document.getElementById("sidemenu");
-    
-    function openmenu(){
+
+    function openmenu() {
         sidemenu.style.right = "0";
     }
-    function closemenu(){
+
+    function closemenu() {
         sidemenu.style.right = "-200px";
     }
+
 </script>
+
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9-EXROg3VhcsowzHZKsYhHAX-aM5JaH2Plh9OvysjmMM0Bocm5q7Dgn5z5KASJ7Y8/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
+
+    /* ================= GOOGLE SHEETS CONTACT FORM ================= */
+
+    const scriptURL =
+        'https://script.google.com/macros/s/AKfycbz9-EXROg3VhcsowzHZKsYhHAX-aM5JaH2Plh9OvysjmMM0Bocm5q7Dgn5z5KASJ7Y8/exec';
+
+    const form =
+        document.forms['submit-to-google-sheet'];
+
+    const msg =
+        document.getElementById("msg");
+
+
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+        e.preventDefault();
+
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+        })
+
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })    
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+
+            msg.innerHTML =
+                "Message sent successfully";
+
+            setTimeout(function () {
+
+                msg.innerHTML = "";
+
+            }, 5000);
+
+            form.reset();
+
+        })
+
+        .catch(error => {
+
+            console.error(
+                'Error!',
+                error.message
+            );
+
+            msg.innerHTML =
+                "Something went wrong. Please try again.";
+
+        });
+
+    });
+
+</script>
+
 </body>
 </html>
