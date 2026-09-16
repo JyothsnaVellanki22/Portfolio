@@ -41,7 +41,7 @@ a {
 
 
 /* =========================================================
-   HEADER / HERO
+   HEADER
 ========================================================= */
 
 #header {
@@ -78,9 +78,16 @@ nav {
     padding-top: 10px;
 }
 
+.nav-brand {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
 nav ul {
     display: flex;
     align-items: center;
+
     gap: 42px;
 
     list-style: none;
@@ -92,6 +99,7 @@ nav ul li {
 
 nav ul li a {
     color: #ffffff;
+
     text-decoration: none;
 
     font-size: 16px;
@@ -111,6 +119,7 @@ nav ul li a::after {
     background: #f5a6a6;
 
     position: absolute;
+
     left: 0;
     bottom: -7px;
 
@@ -127,7 +136,7 @@ nav ul li a:hover::after {
 
 
 /* =========================================================
-   HERO CONTENT
+   HERO
 ========================================================= */
 
 .header-text {
@@ -135,11 +144,10 @@ nav ul li a:hover::after {
 
     margin-top: 20vh;
 
-    font-size: 20px;
     text-align: left;
 }
 
-.header-text p {
+.hero-role {
     font-size: 20px;
     font-weight: 400;
 
@@ -156,20 +164,30 @@ nav ul li a:hover::after {
     line-height: 1.08;
 
     margin-top: 12px;
-
-    text-align: left;
 }
 
 .header-text h1 span {
     color: #f5a6a6;
 }
 
-.header-text .hero-description {
-    max-width: 760px;
-
-    margin-top: 24px;
+.hero-specialization {
+    margin-top: 20px;
 
     font-size: 17px;
+    font-weight: 500;
+
+    letter-spacing: 0.3px;
+
+    color: #ffffff;
+}
+
+.hero-description {
+    max-width: 760px;
+
+    margin-top: 16px;
+
+    font-size: 16px;
+
     line-height: 1.8;
 
     color: #dddddd;
@@ -177,7 +195,7 @@ nav ul li a:hover::after {
 
 
 /* =========================================================
-   HERO BUTTONS
+   BUTTONS
 ========================================================= */
 
 .hero-actions {
@@ -186,11 +204,7 @@ nav ul li a:hover::after {
 
     gap: 16px;
 
-    margin-top: 32px;
-}
-
-.hero-actions .btn {
-    margin: 0;
+    margin-top: 30px;
 }
 
 .btn {
@@ -213,18 +227,29 @@ nav ul li a:hover::after {
 
     transition:
         background 0.3s ease,
-        color 0.3s ease,
         transform 0.3s ease;
 }
 
 .btn:hover {
     background: #ad7e97;
+
     transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: #ad7e97;
+}
+
+.btn-primary:hover {
+    background: transparent;
 }
 
 
 /* =========================================================
-   SECTION COMMON STYLING
+   SECTION BACKGROUNDS
+
+   No additional dark overlay here.
+   This restores the appearance of your older version.
 ========================================================= */
 
 #about,
@@ -233,19 +258,26 @@ nav ul li a:hover::after {
 #contact {
     width: 100%;
 
-    background-image:
-        linear-gradient(
-            rgba(8, 8, 8, 0.20),
-            rgba(8, 8, 8, 0.20)
-        ),
-        url("Images/background.png");
+    background-image: url("Images/background.png");
 
     background-size: cover;
     background-position: center;
-
     background-repeat: no-repeat;
 
     color: #ffffff;
+}
+
+
+/* =========================================================
+   COMMON ROW
+========================================================= */
+
+.row {
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
 }
 
 
@@ -271,16 +303,15 @@ nav ul li a:hover::after {
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    ABOUT IMAGE
 
-   IMPORTANT:
-   This keeps the image close to the original version
-   instead of allowing it to become oversized.
---------------------------------------------------------- */
+   Keeps image close to your older portfolio dimensions.
+========================================================= */
 
 .about-col-1 {
     flex: 0 0 35%;
+
     max-width: 430px;
 }
 
@@ -296,9 +327,9 @@ nav ul li a:hover::after {
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    ABOUT CONTENT
---------------------------------------------------------- */
+========================================================= */
 
 .about-col-2 {
     flex: 1;
@@ -306,11 +337,12 @@ nav ul li a:hover::after {
     max-width: 690px;
 }
 
-.about-col-2 > p {
+.about-description {
     max-width: 680px;
 
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 15px;
+
+    line-height: 1.85;
 
     color: #dddddd;
 }
@@ -329,7 +361,7 @@ nav ul li a:hover::after {
 
     color: #ffffff;
 
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 
@@ -344,7 +376,7 @@ nav ul li a:hover::after {
 
     gap: 34px;
 
-    margin: 35px 0 35px;
+    margin: 35px 0 30px;
 }
 
 .tab-links {
@@ -419,7 +451,7 @@ nav ul li a:hover::after {
 
     font-size: 15px;
 
-    line-height: 1.6;
+    line-height: 1.65;
 
     color: #dddddd;
 }
@@ -434,7 +466,7 @@ nav ul li a:hover::after {
 
 
 /* =========================================================
-   SERVICES / WHAT I BUILD
+   WHAT I BUILD
 ========================================================= */
 
 #services {
@@ -444,12 +476,18 @@ nav ul li a:hover::after {
 .services-list {
     display: grid;
 
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
 
     gap: 24px;
 
     margin-top: 45px;
 }
+
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
 
 .services-list div {
     background: #dbb2c8;
@@ -459,10 +497,6 @@ nav ul li a:hover::after {
     min-height: 310px;
 
     border-radius: 12px;
-
-    font-size: 14px;
-
-    font-weight: 300;
 
     color: #171717;
 
@@ -481,11 +515,21 @@ nav ul li a:hover::after {
 
     transform: translateY(-8px);
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.25);
+}
+
+.services-list div i {
+    font-size: 28px;
+
+    margin-bottom: 25px;
+
+    color: #171717;
 }
 
 .services-list div h2 {
-    font-size: 24px;
+    font-size: 23px;
 
     font-weight: 600;
 
@@ -504,23 +548,14 @@ nav ul li a:hover::after {
     color: #292929;
 }
 
-.services-list div a {
-    text-decoration: none;
-
-    color: #171717;
-
-    font-size: 13px;
-
-    margin-top: auto;
-
-    padding-top: 25px;
-
-    font-weight: 600;
-}
-
 
 /* =========================================================
-   PORTFOLIO / PROJECTS
+   SELECTED WORK / PORTFOLIO
+
+   IMPORTANT:
+   No forced 4:3 aspect ratio.
+   Images use their original dimensions just like
+   your older portfolio.
 ========================================================= */
 
 #portfolio {
@@ -530,32 +565,28 @@ nav ul li a:hover::after {
 .work-list {
     display: grid;
 
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
 
-    gap: 28px;
+    grid-gap: 40px;
 
-    margin-top: 45px;
+    margin-top: 50px;
 }
 
 .work {
-    border-radius: 12px;
+    border-radius: 10px;
 
     position: relative;
 
     overflow: hidden;
-
-    background: #111;
-
-    aspect-ratio: 4 / 3;
 }
 
 .work img {
     width: 100%;
-    height: 100%;
 
-    object-fit: cover;
+    height: auto;
 
-    border-radius: 12px;
+    border-radius: 10px;
 
     display: block;
 
@@ -573,11 +604,11 @@ nav ul li a:hover::after {
 
     background:
         linear-gradient(
-            rgba(252, 252, 252, 0.20),
+            rgba(252, 252, 252, 0.6),
             #ad7e97
         );
 
-    border-radius: 12px;
+    border-radius: 10px;
 
     position: absolute;
 
@@ -593,7 +624,7 @@ nav ul li a:hover::after {
 
     flex-direction: column;
 
-    padding: 0 35px;
+    padding: 0 40px;
 
     text-align: center;
 
@@ -603,24 +634,24 @@ nav ul li a:hover::after {
 }
 
 .layer h3 {
-    font-size: 22px;
+    font-size: 21px;
 
     font-weight: 700;
-
-    margin-bottom: 12px;
-}
-
-.layer p {
-    font-size: 14px;
-
-    line-height: 1.6;
 
     margin-bottom: 15px;
 }
 
+.layer p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
 .layer a {
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
 
     border-radius: 50%;
 
@@ -635,11 +666,11 @@ nav ul li a:hover::after {
 
     text-decoration: none;
 
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .work:hover img {
-    transform: scale(1.06);
+    transform: scale(1.1);
 }
 
 .work:hover .layer {
@@ -648,11 +679,13 @@ nav ul li a:hover::after {
 
 
 /* =========================================================
-   PROJECT BUTTON
+   PORTFOLIO BUTTON
 ========================================================= */
 
-#portfolio > .container > .btn {
-    margin: 45px auto 0;
+.portfolio-btn {
+    display: block;
+
+    margin: 50px auto 0;
 }
 
 
@@ -676,45 +709,29 @@ nav ul li a:hover::after {
 
 .contact-left {
     flex: 0 0 35%;
-    max-width: 400px;
+
+    max-width: 420px;
 }
 
 .contact-right {
     flex: 1;
+
     max-width: 650px;
 }
 
 
 /* =========================================================
-   CONTACT INFORMATION
+   CONTACT LEFT
 ========================================================= */
 
-.contact-left p {
-    margin-top: 25px;
+.contact-description {
+    margin-top: 10px;
 
-    font-size: 16px;
+    font-size: 15px;
 
-    line-height: 1.6;
-}
-
-.contact-left p i {
-    color: #ad7e97;
-
-    margin-right: 15px;
-
-    font-size: 20px;
-}
-
-.contact-left p a {
-    text-decoration: none;
+    line-height: 1.8;
 
     color: #dddddd;
-
-    transition: color 0.3s ease;
-}
-
-.contact-left p a:hover {
-    color: #ad7e97;
 }
 
 
@@ -733,7 +750,7 @@ nav ul li a:hover::after {
 .social-icons a {
     text-decoration: none;
 
-    font-size: 25px;
+    font-size: 27px;
 
     color: #ffffff;
 
@@ -752,7 +769,7 @@ nav ul li a:hover::after {
 
 
 /* =========================================================
-   RESUME BUTTON
+   SECONDARY BUTTON
 ========================================================= */
 
 .btn.btn2 {
@@ -852,7 +869,7 @@ form .btn2 {
 
 
 /* =========================================================
-   MOBILE MENU ICONS
+   MOBILE NAV ICONS
 ========================================================= */
 
 nav .fas {
@@ -870,21 +887,22 @@ nav .fas {
         width: 90%;
     }
 
+
+    /* NAV */
+
     nav ul {
-        gap: 25px;
+        gap: 24px;
     }
+
+
+    /* HERO */
 
     .header-text {
         max-width: 750px;
     }
 
-    .services-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .work-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    /* ABOUT */
 
     #about .row {
         gap: 45px;
@@ -892,12 +910,26 @@ nav .fas {
 
     .about-col-1 {
         flex-basis: 34%;
+
         max-width: 380px;
     }
 
-    .contact-left {
-        flex-basis: 35%;
+
+    /* SERVICES */
+
+    .services-list {
+        grid-template-columns:
+            repeat(2, 1fr);
     }
+
+
+    /* PORTFOLIO */
+
+    .work-list {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
 }
 
 
@@ -912,9 +944,9 @@ nav .fas {
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        HEADER
-    ----------------------------------------------------- */
+    ===================================================== */
 
     #header {
         min-height: 100svh;
@@ -934,12 +966,16 @@ nav .fas {
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        MOBILE NAV
-    ----------------------------------------------------- */
+    ===================================================== */
 
     nav {
         padding-top: 15px;
+    }
+
+    .nav-brand {
+        font-size: 16px;
     }
 
     nav .fas {
@@ -985,24 +1021,20 @@ nav .fas {
 
         top: 25px;
         left: 25px;
-
-        cursor: pointer;
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        HERO
-    ----------------------------------------------------- */
+    ===================================================== */
 
     .header-text {
-        margin-top: 40vh;
+        margin-top: 35vh;
 
         max-width: 100%;
-
-        text-align: left;
     }
 
-    .header-text p {
+    .hero-role {
         font-size: 17px;
     }
 
@@ -1014,12 +1046,20 @@ nav .fas {
         margin-top: 10px;
     }
 
-    .header-text .hero-description {
-        font-size: 15px;
+    .hero-specialization {
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        margin-top: 15px;
+    }
+
+    .hero-description {
+        font-size: 14px;
 
         line-height: 1.7;
 
-        margin-top: 18px;
+        margin-top: 14px;
     }
 
     .hero-actions {
@@ -1027,7 +1067,7 @@ nav .fas {
 
         gap: 12px;
 
-        margin-top: 25px;
+        margin-top: 24px;
     }
 
     .hero-actions .btn {
@@ -1037,9 +1077,9 @@ nav .fas {
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        ABOUT
-    ----------------------------------------------------- */
+    ===================================================== */
 
     #about {
         min-height: auto;
@@ -1048,13 +1088,9 @@ nav .fas {
     }
 
     #about .row {
-        display: flex;
-
         flex-direction: column;
 
         gap: 35px;
-
-        flex-wrap: nowrap;
     }
 
     .about-col-1,
@@ -1064,15 +1100,10 @@ nav .fas {
         max-width: 100%;
     }
 
-    /*
-       On mobile the image remains controlled instead of
-       stretching excessively across the entire screen.
-    */
-
     .about-col-1 {
         width: 100%;
 
-        max-width: 360px;
+        max-width: 350px;
 
         margin: 0 auto;
     }
@@ -1080,25 +1111,21 @@ nav .fas {
     .about-col-1 img {
         width: 100%;
 
-        max-width: 360px;
+        max-width: 350px;
 
-        border-radius: 15px;
+        height: auto;
     }
 
-    .about-col-2 {
-        font-size: 14px;
-    }
-
-    .about-col-2 > p {
+    .about-description {
         font-size: 14px;
 
-        line-height: 1.7;
+        line-height: 1.75;
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        TITLES
-    ----------------------------------------------------- */
+    ===================================================== */
 
     .sub-title {
         font-size: 40px;
@@ -1109,9 +1136,9 @@ nav .fas {
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        TABS
-    ----------------------------------------------------- */
+    ===================================================== */
 
     .tab-titles {
         gap: 22px;
@@ -1132,9 +1159,9 @@ nav .fas {
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        SERVICES
-    ----------------------------------------------------- */
+    ===================================================== */
 
     #services {
         padding: 80px 0;
@@ -1155,13 +1182,15 @@ nav .fas {
     }
 
     .services-list div h2 {
-        font-size: 23px;
+        font-size: 22px;
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        PORTFOLIO
-    ----------------------------------------------------- */
+
+       Natural image ratio maintained on mobile.
+    ===================================================== */
 
     #portfolio {
         padding: 80px 0;
@@ -1170,13 +1199,15 @@ nav .fas {
     .work-list {
         grid-template-columns: 1fr;
 
-        gap: 22px;
+        gap: 25px;
 
         margin-top: 35px;
     }
 
-    .work {
-        aspect-ratio: 4 / 3;
+    .work img {
+        width: 100%;
+
+        height: auto;
     }
 
     .layer {
@@ -1188,9 +1219,9 @@ nav .fas {
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        CONTACT
-    ----------------------------------------------------- */
+    ===================================================== */
 
     #contact {
         padding: 80px 0;
@@ -1200,8 +1231,6 @@ nav .fas {
         flex-direction: column;
 
         gap: 45px;
-
-        flex-wrap: nowrap;
     }
 
     .contact-left,
@@ -1211,8 +1240,8 @@ nav .fas {
         max-width: 100%;
     }
 
-    .contact-left p {
-        font-size: 15px;
+    .contact-description {
+        font-size: 14px;
     }
 
     .social-icons {
@@ -1233,6 +1262,7 @@ nav .fas {
     form textarea {
         min-height: 140px;
     }
+
 }
 
 
@@ -1247,15 +1277,11 @@ nav .fas {
     }
 
     .header-text {
-        margin-top: 35vh;
+        margin-top: 30vh;
     }
 
     .header-text h1 {
         font-size: 37px;
-    }
-
-    .header-text p {
-        font-size: 16px;
     }
 
     .sub-title {
@@ -1277,4 +1303,5 @@ nav .fas {
     .about-col-1 img {
         max-width: 300px;
     }
+
 }
